@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>CV Generator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container" id="cv-form">
+
+<h1 class="text-center my-4">CV Generator</h1>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<h3>Personal Information</h3>
+
+<label>Name</label>
+<input type="text" id="nameField" class="form-control">
+
+<label class="mt-2">Email</label>
+<input type="text" id="emailField" class="form-control">
+
+<label class="mt-2">Phone</label>
+<input type="text" id="phoneField" class="form-control">
+
+<label class="mt-2">Address</label>
+<textarea id="addressField" class="form-control"></textarea>
+
+</div>
+
+<div class="col-md-6">
+
+<h3>Professional Information</h3>
+
+<label>Objective</label>
+<textarea id="objectiveField" class="form-control"></textarea>
+
+<label class="mt-2">Education</label>
+<textarea id="educationField" class="form-control"></textarea>
+
+<label class="mt-2">Skills</label>
+<textarea id="skillsField" class="form-control"></textarea>
+
+<label class="mt-2">Experience</label>
+<textarea id="experienceField" class="form-control"></textarea>
+
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+<button onclick="generateCV()" class="btn btn-primary">
+Generate CV
+</button>
+</div>
+
+</div>
+
+<!-- CV TEMPLATE -->
+
+<div class="container" id="cv-template">
+
+<h1 id="nameT" class="text-center"></h1>
+
+<p class="text-center">
+<span id="emailT"></span> |
+<span id="phoneT"></span>
+</p>
+
+<hr>
+
+<h3>Address</h3>
+<p id="addressT"></p>
+
+<h3>Objective</h3>
+<p id="objectiveT"></p>
+
+<h3>Education</h3>
+<p id="educationT"></p>
+
+<h3>Skills</h3>
+<p id="skillsT"></p>
+
+<h3>Experience</h3>
+<p id="experienceT"></p>
+
+<div class="text-center mt-4">
+<button onclick="printCV()" class="btn btn-success">
+Print CV
+</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
